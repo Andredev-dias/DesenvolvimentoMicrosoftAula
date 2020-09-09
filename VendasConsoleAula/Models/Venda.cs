@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace VendasConsoleAula.Models
 {
@@ -9,11 +10,11 @@ namespace VendasConsoleAula.Models
             CriadoEm = DateTime.Now;
             Cliente = new Cliente();
             Vendedor = new Vendedor();
-            Produto = new Produto();
+            Itens = new List<ItemVenda>();
         }
         public Cliente Cliente { get; set; }
         public Vendedor Vendedor { get; set; }
-        public Produto Produto { get; set; }
+        public List<ItemVenda> Itens { get; set; }
         public int Quantidade { get; set; }
         public DateTime CriadoEm { get; set; }
     }

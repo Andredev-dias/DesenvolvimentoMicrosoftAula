@@ -17,5 +17,10 @@ namespace VendasConsoleAula.Models
         {
             return $"Nome: {Nome } | Preço: {Preco} | Quantidade: {Quantidade} | Criado em: {CriadoEm}";
         }
+
+        public static implicit operator int(Produto v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
